@@ -26,11 +26,6 @@ size = (width, height)
 
 out = cv2.VideoWriter("project.mp4", cv2.VideoWriter_fourcc(*"DIVX"), 5, size)
 
-# for sunset
-# for i in range(0,count-1):
-
-# for sunrise
-
 for i in range(count-1, 0, -1):
     frame = cv2.imread(images[i])
     out.write(frame)
